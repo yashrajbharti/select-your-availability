@@ -166,7 +166,12 @@ font-weight: bold;
 ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
-
+.event{
+  transform: translateZ(100px);
+}
+.bold{
+  font-weight: bold;
+}
 input{
   transform: translateY(6px);
   cursor: pointer;
