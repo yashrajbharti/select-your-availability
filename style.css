@@ -175,3 +175,17 @@ input{
   .checkbox{
     transform: translateX(300px);
 }}
+.user{
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+.user i{
+  padding: 10px;
+  font-size: 26px;
+  cursor:pointer;
+}
+.user a{
+  cursor: default;
+  color: #000;
+}
