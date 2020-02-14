@@ -94,7 +94,7 @@
     margin-left: -.6em;
 }
 .ui-slider a:focus {
-    outline:none;
+    outline:none !important;
 }
 
 #slider-range {

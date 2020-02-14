@@ -1,14 +1,16 @@
   body { background: url("pickers.png"),#eceeef bottom/cover ; }
 .checkbox {
   padding-left: 20px;
-  outline: none;
+  outline: none !important;
 }
 .container{
   background-color: rgba(255, 255, 255, 0.5);
-
 }
 .container div{
   align-items: center;
+}
+input[type=radio] {
+    outline-color: transparent !important;
 }
 h1{
   text-align: center;
@@ -31,6 +33,7 @@ h1{
   width: 17px;
   height: 17px;
   left: 0;
+  margin-top: 10px;
   margin-left: -20px;
   border: 1px solid #cccccc;
   border-radius: 3px;
@@ -47,6 +50,7 @@ h1{
   height: 16px;
   left: 0;
   top: 0;
+    margin-top: 10px;
   margin-left: -20px;
   padding-left: 3px;
   padding-top: 1px;
@@ -59,11 +63,11 @@ h1{
   z-index: 1;
 }
 
-.checkbox input[type="checkbox"]:focus + label::before {
+/* .checkbox input[type="checkbox"]:focus + label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
+} */
 
 .checkbox input[type="checkbox"]:checked + label::after {
   font-family: 'FontAwesome';
@@ -153,3 +157,21 @@ h1{
   -webkit-transform: rotateX(-90deg) translateZ(50px);
           transform: rotateX(-90deg) translateZ(50px);
 }
+button{
+background-color: #69f0ae;
+color: black;
+border: 1px solid black !important;
+font-weight: bold;
+}
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+input{
+  transform: translateY(6px);
+  cursor: pointer;
+}
+@media screen and (orientation:landscape) {
+  .checkbox{
+    transform: translateX(300px);
+}}
